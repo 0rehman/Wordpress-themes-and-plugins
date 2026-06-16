@@ -1,0 +1,171 @@
+.aspire-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+}
+
+.aspire-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFE6BB;
+  z-index: 9999;
+  max-width: 560px;
+  width: 90%;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.aspire-modal h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.aspire-modal .aspire-modal-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.aspire-modal .form-row {
+  margin-bottom: 12px;
+}
+
+.aspire-modal label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.aspire-modal input[type="text"],
+.aspire-modal input[type="email"],
+.aspire-modal textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.aspire-modal .aspire-submit {
+  background: #01216C;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.aspire-modal .success-msg {
+  color: green;
+  margin-top: 10px;
+}
+
+/* WPForms-specific styling inside the modal */
+#contactModal .wpforms-form {
+  margin: 0;
+}
+
+#contactModal .wpforms-field {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#contactModal .wpforms-field .wpforms-field-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #222;
+}
+
+#contactModal .wpforms-field input[type="text"],
+#contactModal .wpforms-field input[type="email"],
+#contactModal .wpforms-field textarea,
+#contactModal .wpforms-field select,
+#contactModal input[type="text"],
+#contactModal input[type="email"],
+#contactModal textarea,
+#contactModal select {
+  width: 100% !important;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  max-width: 100%;
+  resize: none;
+  /* outline: none !important; */
+  /* border: none !important; */
+  box-shadow: none !important;
+}
+
+#contactModal .wpforms-field-row {
+  display: block;
+}
+
+/* Ensure single-column layout for any grid fields */
+#contactModal .wpforms-field-row .wpforms-field {
+  width: 100% !important;
+}
+
+/* Submit button color uses theme CSS variable */
+#contactModal .wpforms-submit,
+#contactModal input[type="submit"],
+#contactModal button[type="submit"] {
+  background: var(--clr-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 70%;
+  margin-inline: auto;
+  display: block;
+  transition: all 300ms ease;
+}
+
+#contactModal .wpforms-submit:hover,
+#contactModal input[type="submit"]:hover,
+#contactModal button[type="submit"]:hover {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+}
+
+#contactModal .wpforms-error {
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+#contactModal .wpforms-confirmation-container {
+  margin-top: 10px;
+  color: green;
+}
+
+#contactModal .wpforms-submit-spinner {
+  display: none !important;
+}
+
+div#contactModal .contact-team-close {
+  background: var(--clr-primary);
+  color: #fff !important;
+  transition: all 300ms ease;
+}
+
+div#contactModal .contact-team-close:hover {
+  background: var(--clr-secondary);
+  color: var(--clr-primary) !important;
+}
